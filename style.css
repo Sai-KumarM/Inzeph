@@ -18,6 +18,9 @@
     visibility: hidden;
 }
 
+
+/* ---------------------------------steps elementor------------------------ */
+
 .elementor-section {
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     padding: 97px 0px 110px 0px;
@@ -196,9 +199,9 @@ a:active {
     background-color: #4f3dff;
     font-size: 30px;
     font-weight: 700;
-    font-family: fira sans, sans-serif;
+    font-family: "fira sans", sans-serif;
     color: #fff;
-    display: flex;
+    /* display: flex; */
     min-width: 110px;
     justify-content: center;
     position: relative;
@@ -347,4 +350,46 @@ a:active {
 .ct-content {
     columns: auto;
     text-decoration: dotted;
+}
+
+
+/* -------------------------------------footer----------------------------- */
+
+footer {
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    padding: 50px;
+    background: linear-gradient(90deg, #021048, #1e38a3) !important;
+}
+
+.footer-heading {
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.footer-btn {
+    color: white;
+    background-color: #175cff;
+    border-color: #175cff;
+    box-shadow: 0 11px 18px -8px rgba(23, 92, 255, 60%);
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 27px;
+    box-shadow: none;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+.footer-ul {
+    list-style: none;
+}
+
+.footer-ul li {
+    padding: 3px;
+}
+
+#para {
+    text-align: center;
+    padding-top: 20px;
 }
