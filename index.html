@@ -8,163 +8,327 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
     <!-- ------------------------------------------navbar-------------------------------------------- -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">INZEPH</a>
-            <div class="clearfix"></div>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                Services</a
-              >
-              <ul class="dropdown-menu column2">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <ul>
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                        <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">Something else here</a
-                        >
-                      </li>
-                    </ul>
+    <section class="navbar-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">INZEPH</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resources</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services</a
+                >
+                <ul class="dropdown-menu column2">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <ul>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6">
+                      <ul>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="col-sm-6">
-                    <ul>
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                        <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Pricing
-              </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Company</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li> -->
                 </ul>
-                <button class="btn btn-primary" type="submit">Get Started</button>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pricing
+                </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Company</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary" type="submit">Get Started</button>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </section>
 
+    <!-- -----------------------------------------testimonials--------------------------------------- -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimonials</h2>
+                <span class="section-separator"></span>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+            </div>
+            <div class="testimonials-carousel-wrap">
+                <div class="listing-carousel-button listing-carousel-button-next">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="listing-carousel-button listing-carousel-button-prev">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="testimonials-carousel">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar">
+                                        <img src="images/img1.jpg" />
+                                    </div>
+                                    <div class="testimonials-text-before">
+                                        <i class="fa fa-quote-right"></i>
+                                    </div>
+                                    <div class="testimonials-text">
+                                        <div class="listing-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="testimonials-avatar">
+                                            <h3>John Doe</h3>
+                                            <h4>Owner</h4>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        </p>
+                                        <a href="#" class="text-link"></a>
+                                    </div>
+                                    <div class="testimonials-text-after">
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--second--->
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar">
+                                        <img src="images/img3.jpeg" />
+                                    </div>
+                                    <div class="testimonials-text-before">
+                                        <i class="fa fa-quote-right"></i>
+                                    </div>
+                                    <div class="testimonials-text">
+                                        <div class="listing-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="testimonials-avatar">
+                                            <h3>Doe Boe</h3>
+                                            <h4>Director</h4>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        </p>
+                                        <a href="#" class="text-link"></a>
+                                    </div>
+                                    <div class="testimonials-text-after">
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--third-->
+
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar">
+                                        <img src="images/img2.jpg" />
+                                    </div>
+                                    <div class="testimonials-text-before">
+                                        <i class="fa fa-quote-right"></i>
+                                    </div>
+                                    <div class="testimonials-text">
+                                        <div class="listing-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="testimonials-avatar">
+                                            <h3>Boe Doe</h3>
+                                            <h4>Developer</h4>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        </p>
+                                        <a href="#" class="text-link"></a>
+                                    </div>
+                                    <div class="testimonials-text-after">
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--fourth-->
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar">
+                                        <img src="images/img1.jpg" />
+                                    </div>
+                                    <div class="testimonials-text-before">
+                                        <i class="fa fa-quote-right"></i>
+                                    </div>
+                                    <div class="testimonials-text">
+                                        <div class="listing-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="testimonials-avatar">
+                                            <h3>Doe John</h3>
+                                            <h4>Designer</h4>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        </p>
+                                        <a href="#" class="text-link"></a>
+                                    </div>
+                                    <div class="testimonials-text-after">
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--testi end-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="tc-pagination"></div>
+        </div>
+    </section>
     <!-- -----------------------------------------faq------------------------------------------------- -->
-    <div class="heading-para">
-        <h5 class="faq-smallheading">FAQ</h5>
-        <h2 class="faq-heading">Frequently Asked Questions</h2>
-        <p>
-            Completely whiteboard top-line channels and fully tested value. Competently generate testing<br /> procedures before visionary maintainable growth strategies for maintainable.
-        </p>
-    </div>
-    <div class="container wrapper">
-        <div class="row faq-row">
-            <div class="question">How does back pricing work?</div>
-            <div class="answercont">
-                <div class="answer">
-                    Dramatically formulate cross-unit products with web-enabled action items. Quickly maximize extensible methods of empowerment without out-of-the-box initiatives. Proactively myocardinate functional total linkage rather than seamless information. Holisticly
-                    fabricate timely initiatives vis-a-vis high-quality imperatives. Continually deploy open-source content through professional customer service.
+    <section class="faq-section">
+        <div class="heading-para">
+            <h5 class="faq-smallheading">FAQ</h5>
+            <h2 class="faq-heading">Frequently Asked Questions</h2>
+            <p>
+                Completely whiteboard top-line channels and fully tested value. Competently generate testing<br /> procedures before visionary maintainable growth strategies for maintainable.
+            </p>
+        </div>
+        <div class="container wrapper">
+            <div class="row faq-row">
+                <div class="question">How does back pricing work?</div>
+                <div class="answercont">
+                    <div class="answer">
+                        Dramatically formulate cross-unit products with web-enabled action items. Quickly maximize extensible methods of empowerment without out-of-the-box initiatives. Proactively myocardinate functional total linkage rather than seamless information. Holisticly
+                        fabricate timely initiatives vis-a-vis high-quality imperatives. Continually deploy open-source content through professional customer service.
+                    </div>
                 </div>
             </div>
+
+            <div class="row faq-row">
+                <div class="question">
+                    My Pen loads infinitely or crashes the browser.
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        It's likely an infinite loop in JavaScript that we could not catch. To fix, add ?turn_off_js=true to the end of the URL (on any page, like the Pen or Project editor, your Profile page, or the Dashboard) to temporarily turn off JavaScript. When you're
+                        ready to run the JavaScript again, remove ?turn_off_js=true and refresh the page.<br /><br />
+                        <a href="https://blog.codepen.io/documentation/features/turn-off-javascript-in-previews/">How to Disable JavaScript Docs</a
+              >
+            </div>
+          </div>
         </div>
 
         <div class="row faq-row">
-            <div class="question">
-                My Pen loads infinitely or crashes the browser.
+          <div class="question">How do I contact the creator of a Pen?</div>
+          <div class="answercont">
+            <div class="answer">
+              You can leave a comment on any public Pen. Click the "Comments"
+              link in the Pen editor view, or visit the Details page.<br /><br />
+              <a
+                href="https://blog.codepen.io/documentation/faq/how-do-i-contact-the-creator-of-a-pen/"
+                >How to Contact Creator of a Pen Docs</a
+              >
             </div>
-            <div class="answercont">
-                <div class="answer">
-                    It's likely an infinite loop in JavaScript that we could not catch. To fix, add ?turn_off_js=true to the end of the URL (on any page, like the Pen or Project editor, your Profile page, or the Dashboard) to temporarily turn off JavaScript. When you're
-                    ready to run the JavaScript again, remove ?turn_off_js=true and refresh the page.<br /><br />
-                    <a href="https://blog.codepen.io/documentation/features/turn-off-javascript-in-previews/">How to Disable JavaScript Docs</a
-            >
           </div>
         </div>
-      </div>
 
-      <div class="row faq-row">
-        <div class="question">How do I contact the creator of a Pen?</div>
-        <div class="answercont">
-          <div class="answer">
-            You can leave a comment on any public Pen. Click the "Comments" link
-            in the Pen editor view, or visit the Details page.<br /><br />
-            <a
-              href="https://blog.codepen.io/documentation/faq/how-do-i-contact-the-creator-of-a-pen/"
-              >How to Contact Creator of a Pen Docs</a
-            >
+        <div class="row faq-row">
+          <div class="question">
+            What version of [library] does CodePen use?
           </div>
-        </div>
-      </div>
-
-      <div class="row faq-row">
-        <div class="question">What version of [library] does CodePen use?</div>
-        <div class="answercont">
-          <div class="answer">
-            We have our current list of library versions
-            <a href="https://codepen.io/versions">here</a>
+          <div class="answercont">
+            <div class="answer">
+              We have our current list of library versions
+              <a href="https://codepen.io/versions">here</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row faq-row">
-            <div class="question">What are forks?</div>
-            <div class="answercont">
-                <div class="answer">
-                    A fork is a complete copy of a Pen or Project that you can save to your own account and modify. Your forked copy comes with everything the original author wrote, including all of the code and any dependencies.
-                    <br /><br />
-                    <a href="https://blog.codepen.io/documentation/features/forks/">Learn More About Forks</a
-            >
+            <div class="row faq-row">
+                <div class="question">What are forks?</div>
+                <div class="answercont">
+                    <div class="answer">
+                        A fork is a complete copy of a Pen or Project that you can save to your own account and modify. Your forked copy comes with everything the original author wrote, including all of the code and any dependencies.
+                        <br /><br />
+                        <a href="https://blog.codepen.io/documentation/features/forks/">Learn More About Forks</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- ----------------------------------------tools used------------------------------------------- -->
     <section class="tools-used">
@@ -175,46 +339,6 @@
               <a href="#" class="int-1" title="Brand Name">
                 <img src="images/drive.png" alt="int-1" class="img-circle" />
               </a>
-                </div>
-                <div class="integration-list-wrap">
-                    <a href="#" class="int-2" title="Brand Name">
-                        <img src="images/2.png" alt="int-1" class="img-circle" />
-                    </a>
-                </div>
-                <div class="integration-list-wrap">
-                    <a href="#" class="int-3" title="Brand Name">
-                        <img src="images/3.png" alt="int-1" class="img-circle" />
-                    </a>
-                </div>
-                <div class="integration-list-wrap">
-                    <a href="#" class="int-4" title="Brand Name">
-                        <img src="images/4.png" alt="int-1" class="img-circle" />
-                    </a>
-                </div>
-                <div class="integration-list-wrap">
-                    <a href="#" class="int-5" title="Brand Name">
-                        <img src="images/5.png" alt="int-1" class="img-circle" />
-                    </a>
-                </div>
-                <div class="integration-list-wrap">
-                    <a href="#" class="int-6" title="Brand Name">
-                        <img src="images/6.png" alt="int-1" class="img-circle" />
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="tool-section-heading">
-                    <h4 class="text-primary">Integration</h4>
-                    <h2>We Collaborate with Top Software Company</h2>
-                    <a href="#" class="tool-btn">View all Integration</a>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="col-lg-3">
-                    <div class="integration-list-wrap">
-                        <a href="#" class="int-1" title="Brand Name">
-                            <img src="images/drive.png" alt="int-1" class="img-circle" />
-                        </a>
                     </div>
                     <div class="integration-list-wrap">
                         <a href="#" class="int-2" title="Brand Name">
@@ -242,9 +366,49 @@
                         </a>
                     </div>
                 </div>
+                <div class="col-lg-6">
+                    <div class="tool-section-heading">
+                        <h4 class="text-primary">Integration</h4>
+                        <h2>We Collaborate with Top Software Company</h2>
+                        <a href="#" class="tool-btn">View all Integration</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="col-lg-3">
+                        <div class="integration-list-wrap">
+                            <a href="#" class="int-1" title="Brand Name">
+                                <img src="images/drive.png" alt="int-1" class="img-circle" />
+                            </a>
+                        </div>
+                        <div class="integration-list-wrap">
+                            <a href="#" class="int-2" title="Brand Name">
+                                <img src="images/2.png" alt="int-1" class="img-circle" />
+                            </a>
+                        </div>
+                        <div class="integration-list-wrap">
+                            <a href="#" class="int-3" title="Brand Name">
+                                <img src="images/3.png" alt="int-1" class="img-circle" />
+                            </a>
+                        </div>
+                        <div class="integration-list-wrap">
+                            <a href="#" class="int-4" title="Brand Name">
+                                <img src="images/4.png" alt="int-1" class="img-circle" />
+                            </a>
+                        </div>
+                        <div class="integration-list-wrap">
+                            <a href="#" class="int-5" title="Brand Name">
+                                <img src="images/5.png" alt="int-1" class="img-circle" />
+                            </a>
+                        </div>
+                        <div class="integration-list-wrap">
+                            <a href="#" class="int-6" title="Brand Name">
+                                <img src="images/6.png" alt="int-1" class="img-circle" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     </section>
 
     <!-- ---------------------------------steps elementor onepage section----------------------------- -->
@@ -427,6 +591,8 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
