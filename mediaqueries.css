@@ -1,0 +1,21 @@
+@media (max-width: 1195px) {
+    #left-tool {
+        position: relative;
+        left: -60px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .testimonials-section {
+        margin-top: 15%;
+    }
+    .faq-row {
+        margin: 15px -30px;
+    }
+    #first {
+        order: 2;
+    }
+    #second {
+        order: 1;
+    }
+}

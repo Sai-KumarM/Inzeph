@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="mediaqueries.css" />
 </head>
 
 <body>
     <!-- ------------------------------------------navbar-------------------------------------------- -->
     <section class="navbar-section">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">INZEPH</a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -29,56 +30,27 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#">Resources</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services</a
-                >
-                <ul class="dropdown-menu column2">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <ul>
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                            <a class="dropdown-item" href="#">Another action</a>
+                  Services
+                </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Idea to project</a></li>
+                                <li><a class="dropdown-item" href="#">Our Solutions</a></li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider" />
+                                </li> -->
+                                <li>
+                                    <a class="dropdown-item" href="#">Problem to project</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-6">
-                      <ul>
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Pricing
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  Project
                 </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -90,12 +62,12 @@
                                     <a class="dropdown-item" href="#">Something else here</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Company</a>
+                            <a class="nav-link" href="#">Project</a>
                         </li>
                     </ul>
-                    <button class="btn btn-primary" type="submit">Get Started</button>
+                    <button class="btn btn-primary" type="submit">Contact us</button>
                 </div>
             </div>
         </nav>
@@ -258,12 +230,14 @@
     </section>
     <!-- -----------------------------------------faq------------------------------------------------- -->
     <section class="faq-section">
-        <div class="heading-para">
-            <h5 class="faq-smallheading">FAQ</h5>
-            <h2 class="faq-heading">Frequently Asked Questions</h2>
-            <p>
-                Completely whiteboard top-line channels and fully tested value. Competently generate testing<br /> procedures before visionary maintainable growth strategies for maintainable.
-            </p>
+        <div class="container">
+            <div class="heading-para">
+                <h5 class="faq-smallheading">FAQ</h5>
+                <h2 class="faq-heading">Frequently Asked Questions</h2>
+                <p>
+                    Completely whiteboard top-line channels and fully tested value. Competently generate testing<br /> procedures before visionary maintainable growth strategies for maintainable.
+                </p>
+            </div>
         </div>
         <div class="container wrapper">
             <div class="row faq-row">
@@ -333,8 +307,8 @@
     <!-- ----------------------------------------tools used------------------------------------------- -->
     <section class="tools-used">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-3">
+        <div class="row tool-align-items-center">
+          <div class="col-lg-3 d-sm-block d-md-none d-lg-none" id="left-tool">
             <div class="integration-list-wrap">
               <a href="#" class="int-1" title="Brand Name">
                 <img src="images/drive.png" alt="int-1" class="img-circle" />
@@ -366,45 +340,75 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-3 d-none d-sm-none d-md-block d-lg-block" id="left-tool">
+                    <div class="integration-list-wrap">
+                        <a href="#" class="int-1" title="Brand Name">
+                            <img src="images/drive.png" alt="int-1" class="img-circle" />
+                        </a>
+                    </div>
+                    <div class="integration-list-wrap">
+                        <a href="#" class="int-2" title="Brand Name">
+                            <img src="images/2.png" alt="int-1" class="img-circle" />
+                        </a>
+                    </div>
+                    <div class="integration-list-wrap">
+                        <a href="#" class="int-3" title="Brand Name">
+                            <img src="images/3.png" alt="int-1" class="img-circle" />
+                        </a>
+                    </div>
+                    <div class="integration-list-wrap">
+                        <a href="#" class="int-4" title="Brand Name">
+                            <img src="images/4.png" alt="int-1" class="img-circle" />
+                        </a>
+                    </div>
+                    <div class="integration-list-wrap">
+                        <a href="#" class="int-5" title="Brand Name">
+                            <img src="images/5.png" alt="int-1" class="img-circle" />
+                        </a>
+                    </div>
+                    <div class="integration-list-wrap">
+                        <a href="#" class="int-6" title="Brand Name">
+                            <img src="images/6.png" alt="int-1" class="img-circle" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
                     <div class="tool-section-heading">
                         <h4 class="text-primary">Integration</h4>
                         <h2>We Collaborate with Top Software Company</h2>
                         <a href="#" class="tool-btn">View all Integration</a>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="col-lg-3">
-                        <div class="integration-list-wrap">
-                            <a href="#" class="int-1" title="Brand Name">
-                                <img src="images/drive.png" alt="int-1" class="img-circle" />
-                            </a>
-                        </div>
-                        <div class="integration-list-wrap">
-                            <a href="#" class="int-2" title="Brand Name">
-                                <img src="images/2.png" alt="int-1" class="img-circle" />
-                            </a>
-                        </div>
-                        <div class="integration-list-wrap">
-                            <a href="#" class="int-3" title="Brand Name">
-                                <img src="images/3.png" alt="int-1" class="img-circle" />
-                            </a>
-                        </div>
-                        <div class="integration-list-wrap">
-                            <a href="#" class="int-4" title="Brand Name">
-                                <img src="images/4.png" alt="int-1" class="img-circle" />
-                            </a>
-                        </div>
-                        <div class="integration-list-wrap">
-                            <a href="#" class="int-5" title="Brand Name">
-                                <img src="images/5.png" alt="int-1" class="img-circle" />
-                            </a>
-                        </div>
-                        <div class="integration-list-wrap">
-                            <a href="#" class="int-6" title="Brand Name">
-                                <img src="images/6.png" alt="int-1" class="img-circle" />
-                            </a>
-                        </div>
+                <div class="col-lg-3 d-none d-sm-none d-md-block d-lg-block">
+                    <div class="integration-list-wrap">
+                        <a href="#" class="int-1" title="Brand Name">
+                            <img src="images/drive.png" alt="int-1" class="img-circle" />
+                        </a>
+                    </div>
+                    <div class="integration-list-wrap">
+                        <a href="#" class="int-2" title="Brand Name">
+                            <img src="images/2.png" alt="int-1" class="img-circle" />
+                        </a>
+                    </div>
+                    <div class="integration-list-wrap">
+                        <a href="#" class="int-3" title="Brand Name">
+                            <img src="images/3.png" alt="int-1" class="img-circle" />
+                        </a>
+                    </div>
+                    <div class="integration-list-wrap">
+                        <a href="#" class="int-4" title="Brand Name">
+                            <img src="images/4.png" alt="int-1" class="img-circle" />
+                        </a>
+                    </div>
+                    <div class="integration-list-wrap">
+                        <a href="#" class="int-5" title="Brand Name">
+                            <img src="images/5.png" alt="int-1" class="img-circle" />
+                        </a>
+                    </div>
+                    <div class="integration-list-wrap">
+                        <a href="#" class="int-6" title="Brand Name">
+                            <img src="images/6.png" alt="int-1" class="img-circle" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -435,7 +439,7 @@
                             <div class="ct-steps">
                                 <div class="ct-step-1">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 col-sm-12">
                                             <div class="ct-holder">
                                                 <h5 class="ct-title">Send us Message</h5>
                                                 <div class="ct-content">
@@ -448,15 +452,15 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 col-sm-12">
                                             <div class="ct-meta">
                                                 <div class="row">
-                                                    <div class="col-md-3">
+                                                    <div class="col-sm-3">
                                                         <div class="ct-number">
                                                             <div class="num">01</div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-9">
+                                                    <div class="col-sm-9">
                                                         <div class="ct-icon">
                                                             <img src="images/step3.png" width="105" height="93" class="attachment-full" />
                                                         </div>
@@ -465,20 +469,20 @@
                                                 <div class="ct-arrow1 d-none d-xl-block">
                                                     <i class="flaticon-next">&rarr;</i>
                                                 </div>
-                                                <div class="ct-line1"></div>
+                                                <div class="ct-line1 d-sm-none d-md-block"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="ct-step-2">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-12 col-md-6" id="first">
                                             <div class="ct-meta">
                                                 <div class="row">
-                                                    <div class="col-md-3">
+                                                    <div class="col-sm-3">
                                                         <div class="ct-number2">02</div>
                                                     </div>
-                                                    <div class="col-md-9">
+                                                    <div class="col-sm-9">
                                                         <div class="ct-icon">
                                                             <img src="images/step3-2.png" width="89" height="101" class="attachment-full" />
                                                         </div>
@@ -487,11 +491,11 @@
                                                 <div class="ct-arrow2 d-none d-xl-block">
                                                     <i class="flaticon-next">&larr;</i>
                                                 </div>
-                                                <div class="ct-line2"></div>
+                                                <div class="ct-line2 d-sm-none d-md-block"></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="ct-holder2">
+                                        <div class="col-12 col-md-6" id="second">
+                                            <div class="ct-holder">
                                                 <h5 class="ct-title">Discuss With Us</h5>
                                                 <div class="ct-content">
                                                     When we receive your message. Our support team will check the information and provide you with suitable solutions for our services available on this website.
@@ -505,7 +509,7 @@
                                 </div>
                                 <div class="ct-step-3">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 col-sm-12">
                                             <div class="ct-holder">
                                                 <h5 class="ct-title">Send us Message</h5>
                                                 <div class="ct-content">
@@ -518,15 +522,15 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 col-sm-12">
                                             <div class="ct-meta">
                                                 <div class="row">
-                                                    <div class="col-md-3">
+                                                    <div class="col-sm-3">
                                                         <div class="ct-number">
                                                             <div class="num">01</div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-9">
+                                                    <div class="col-sm-9">
                                                         <div class="ct-icon">
                                                             <img src="images/step3.png" width="105" height="93" class="attachment-full" />
                                                         </div>
@@ -590,9 +594,9 @@
             <p>&copy; 2022 Enzeph. Disclaimer. Privacy Policy</p>
         </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
