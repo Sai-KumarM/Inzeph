@@ -1,21 +1,94 @@
-@media (max-width: 1195px) {
-    #left-tool {
-        position: relative;
-        left: -60px;
-    }
-}
-
 @media (max-width: 575.98px) {
+    /* testimonials ----------------*/
     .testimonials-section {
         margin-top: 15%;
     }
+}
+
+@media (max-width: 991px) {
+    /* tools-used----------------- */
+    .integration-list-wrap {
+        margin-top: 8%;
+    }
+    .integration-list-wrap a {
+        float: left;
+        position: relative;
+        left: 17%;
+    }
+    .img-circle {
+        width: 50px;
+        border-radius: 50% !important;
+        box-shadow: 7px 7px 10px 0 rgba(55, 65, 81, 12%);
+    }
+    #left-tool,
+    #right-tool {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    /* tools-used------------------ */
+    .integration-list-wrap a {
+        position: relative;
+        left: 6%;
+    }
+    /* faq section---------------- */
     .faq-row {
         margin: 15px -30px;
     }
+    /* steps elementor one page section */
     #first {
         order: 2;
     }
     #second {
         order: 1;
+    }
+    .ct-holder {
+        width: 100%;
+        padding: 0%;
+    }
+    .ct-meta {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .ele-text {
+        margin-bottom: 50px;
+    }
+    .item-sub-title::after,
+    .item-sub-title::before {
+        content: none;
+    }
+}
+
+@media (max-width: 576px) {
+    /* steps elementor one page section */
+    /* footer */
+    .footer-heading {
+        padding-bottom: 6px;
+    }
+    .footer-btn {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 520px) {
+    /* tools-used----------------- */
+    .img-circle {
+        width: 40px;
+    }
+    .integration-list-wrap a {
+        left: 4%;
+        padding: 0;
+    }
+    .integration-list-wrap a img {
+        padding: 7px;
+    }
+    .integration-list-wrap a {
+        position: relative;
+        margin-right: 7.5px;
+        margin-left: 7.5px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
     }
 }
